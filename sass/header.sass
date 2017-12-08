@@ -1,0 +1,92 @@
+@import "bourbon"
+@import "vars.sass"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "OpenSans", sans-serif
+	overflow-x: hidden
+
+h1, h2, h3, h4, h5, h6, a, .title
+	font-family: 'OswaldRegular'
+.hidden
+	display: none
+
+a
+	color: $grey
+	&:hover
+		color: $basic
+		transition: all 0.3s ease-out
+
+
+.logo
+	font-family: "OswaldBold"
+	font-weight: bold
+	font-size: 52px
+	letter-spacing: -2px
+	margin-top: 26px
+	line-height: 65px
+	color: $grey
+	img
+		margin-right: 14px
+		margin-top: -12px
+
+.site-description
+	color: #858585
+	font-weight: 100
+	font-size: 14px
+	margin-left: 4px
+
+nav 
+	ul
+		list-style-type: none
+		margin: 20px 0px
+		padding: 0px
+		li
+			display: inline-block
+			margin-right: 33px
+			text-transform: uppercase
+			font-size: 18px
+			a
+				color: #505050
+				font-weight: 500
+				font-family: 'OswaldRegular'
+				transition: all 0.6s ease-out
+				&:after
+					background: white
+					content: ''
+					width: 20%
+					height: 2px
+					display: block
+					margin: -6px auto
+					transition: all 0.4s ease-out
+				&:hover
+					text-decoration: none
+					&:after
+						background: $basic
+						margin-top: 1px
+						width: 100%
+						transition: all 0.36s ease-out
+
+.headline-news
+	border: 1px solid #f1f1f1
+	border-radius: 2px
+	margin-bottom: 27px
+	div
+		display: inline-block
+	.caption-tickets
+		background: $basic
+		color: white
+		padding: 8px 20px
+		font-size: 14px
+		text-transform: uppercase
+	.news
+		padding: 6px 20px
+		font-size: 13px
+		.data
+			color: #d0d0d0
+			font-weight: bold
+			margin-left: 4px
+

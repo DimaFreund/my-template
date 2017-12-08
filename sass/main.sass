@@ -1,0 +1,324 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/fontawesome/font-awesome.sass"
+@import "app/libs/owlcarousel/scss/owl.carousel.scss"
+@import "app/libs/owlcarousel/scss/owl.theme.default.scss"
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+//Home page
+
+
+.home-page
+	.home-carousel
+		img
+			height: 375px
+		.owl-nav
+			position: absolute
+			bottom: 25px
+			right: 29px
+			div
+				background: none
+				border: 1px solid white
+				height: 25px
+				width: 25px
+				&:hover
+					background: $basic
+					transition: all 0.43s ease-out
+				i
+					font-size: 17px
+					position: relative
+					top: -3px
+		.place-info-news
+			position: absolute
+			bottom: 0px
+			background: rgba(0,0,0, 0.77)
+			width: 100%
+			padding: 0px 34px 30px
+			color: white
+			h2
+				margin-top: 17px
+				margin-bottom: 8px
+				padding-bottom: 26px
+				position: relative
+				border-bottom: 1px solid white
+				a
+					color: white
+					font-size: 32px
+					font-weight: 400
+					line-height: 36px
+					&:hover
+						text-decoration: none
+				&:after
+					content: ''
+					width: 86px
+					height: 6px
+					background: $basic
+					position: absolute
+					bottom: -1px
+					left: 0px
+					transition: all 0.4s ease-out
+				&:hover
+					&:after
+						width: 100%
+						height: 1px
+						transition: all 0.46s ease-out
+			span
+				a
+					color: $basic
+
+.news-block
+	h3
+		text-align: center
+		text-transform: uppercase
+		font-weight: normal
+		background: white
+		display: block
+		width: 184px
+		margin: auto
+		position: relative
+		z-index: 10
+	.black-line
+		background: black
+		height: 1px
+		width: 238px
+		display: block
+		margin: auto
+		position: relative
+		top: -13px
+	ul
+		list-style-type: none
+		padding: 4px
+		margin-top: 29px
+		li
+			border-bottom: 1px solid #ddd
+			padding-bottom: 7px
+			margin-bottom: 14px
+	img
+		width: 120px
+		height: 75px
+		display: inline-block
+		float: left
+		margin-right: 10px
+	h4
+		font-size: 16px
+		margin-top: 0px
+		font-weight: 100
+		margin-bottom: 5px
+		min-height: 49px
+.date-post, .count-view, .date-post a
+	display: inline-block
+	font-size: 13px
+	color: #aaa
+	font-family: 'OpenSans,sans-serif'
+.count-view
+	display: inline-block
+	margin-left: 6px
+		
+.info-post
+	display: inline-block
+	width: 63%
+
+
+
+
+footer
+	background: #404040
+	color: #808080
+	.logo
+		font-size: 46px
+		color: #cdcdcd
+		margin-top: 42px
+	.site-description
+		font-size: 12px
+	.more-site-description
+		font-size: 14px
+		border-bottom: 1px solid #555
+		padding-bottom: 21px
+	.social-network-button
+		margin-top: 10px
+		ul
+			list-style-type: none
+			padding: 0px
+			li
+				display: inline-block
+				margin-right: 10px
+				i
+					color: #888
+					font-size: 22px
+					&:hover
+						color: $basic
+						transition: all 0.4s ease-out
+	.news-block
+		margin-top: 42px
+		h3
+			background: #404040
+			color: #cdcdcd
+		ul
+			padding: 0px
+			li
+				border-bottom-color: #555
+				a
+					color: #808080
+	.tags-cloud
+		h3
+			width: 124px
+		.black-line
+			width: 182px
+			margin-bottom: 22px
+		p
+			display: inline-block
+			margin: 4px 7px 4px 0px
+			text-transform: uppercase
+			a
+				font-size: 13px
+				background: #4f4f4f
+				color: #808080
+				border-radius: 2px
+				padding: 2px 5px
+				transition: all 0.23s ease-out
+				&:hover
+					color: white
+					background: $basic
+					transition: all 0.38s ease-out
+					text-decoration: none
+	.photo-section
+		h3
+			width: 153px
+		.black-line
+			width: 211px
+		.photo-box
+			margin-top: 24px
+			a
+				display: inline-block
+				width: 62px
+				height: 62px
+				img
+					width: 100%
+					height: 100%
+					padding: 2px
+					border-radius: 4px
+	.black-line
+		background: #cdcdcd!important
+	.section-bottom-info
+		text-align: center
+		background: #565656
+		font-weight: normal
+		padding: 20px
+		a
+			color: #808080
+			margin: 0px 6px
+	.section-copyright
+		text-align: center
+		padding: 7px
+		font-size: 13px
+		a
+			color: $basic
+			margin: 0px 5px
+
+.intresting-section
+	h3
+		text-transform: uppercase
+		border-bottom: 1px solid #ddd
+		padding-bottom: 8px
+		position: relative
+		margin-top: 50px
+		font-weight: normal
+		&:after
+			content: ''
+			width: 80px
+			height: 4px
+			background: black
+			position: absolute
+			bottom: 0px
+			left: 0px
+	.big-item
+		img
+			width: 100%
+			height: 215px
+		h4
+			margin-top: 13px
+
+	.small-items
+		margin-top: 25px
+		margin-bottom: 35px
+		img
+			width: 120px
+			height: 75px
+			display: inline-block
+			float: left
+			margin-right: 10px
+		h4
+			font-size: 16px
+			margin-top: 0px
+			font-weight: 100
+			margin-bottom: 5px
+			min-height: 49px
+
+
+.popular-post
+	ul.tabs-header
+		border-bottom: 5px solid $basic
+		padding: 0px 0px 3px
+		margin-bottom: 0px
+		li
+			display: inline-block
+			border-bottom: none
+			background: #d0d0d0
+			text-transform: uppercase
+			cursor: pointer
+			color: #fdfdfd
+			margin: 0px
+			font-size: 15px
+			border-radius: 2px
+			padding: 4px 9px
+			transition: all 0.23s ease-out
+			&:hover
+				background: $basic
+				transition: all 0.4s ease-out
+		li.active
+			background: $basic
+	.tabs-item
+		display: none
+	.tabs-item.active
+		display: block
+	ul.tabs-body
+		margin-top: 0px
+		background: #f3f3f3
+		padding: 14px
+		.info-post
+			width: 60%
+			h4
+				line-height: 17px
+				font-size: 15px
+	
+
+
+
+//ALWAYS END
+@import "media"
